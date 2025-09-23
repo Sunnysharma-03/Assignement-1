@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete Webpage Demo</title>
+<link rel="stylesheet" href="partB.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</div>
+
+<!-- Profile Card -->
+<div class="profile-card">
+    <img src="photo.jpg" alt="Profile Image">
+    <h2>Sunny Sharma</h2>
+    <p>BCA Student | Tech Enthusiast | Always learning new skills!</p>
+</div>
+
+<!-- Registration Form -->
+<div class="form-container">
+    <h3>Registration Form</h3>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <div class="gender">
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div class="hobbies">
+            <label>Hobbies</label>
+            <input type="checkbox" id="coding" name="hobbies" value="Coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="music" name="hobbies" value="Music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="sports" name="hobbies" value="Sports">
+            <label for="sports">Sports</label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<!-- Two-Column Layout -->
+<div class="two-column">
+    <div class="text">
+        <h2>About This Layout</h2>
+        <p>
+            This section demonstrates a two-column layout using CSS Flexbox.
+            The left side contains text while the right side contains an image.
+            On smaller screens it stacks vertically for responsiveness.
+        </p>
+    </div>
+    <img src="shin.png" alt="Sample Image">
+</div>
+
+<!-- Styled Buttons -->
+<div class="button-section">
+    <h3>Styled Buttons</h3>
+    <button class="btn btn1">Red Button</button>
+    <button class="btn btn2">Blue Button</button>
+    <button class="btn btn3">Green Button</button>
+</div>
+
+</body>
+</html>

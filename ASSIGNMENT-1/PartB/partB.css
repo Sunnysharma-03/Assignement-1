@@ -1,0 +1,161 @@
+
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        padding: 30px;
+    }
+    h2, h3 { color: #333; }
+
+    /* ===== Navigation Bar ===== */
+    .navbar {
+        background: #333;
+        overflow: hidden;
+        margin-bottom: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .navbar a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        transition: background 0.3s;
+    }
+    .navbar a:hover {
+        background: #575757;
+    }
+
+    /* ===== Profile Card ===== */
+    .profile-card {
+        width: 300px;
+        margin: 0 auto 50px auto;
+        background: #fff;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        text-align: center;
+        padding: 20px;
+    }
+    .profile-card img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid #333;
+        object-fit: cover;
+    }
+    .profile-card h2 {
+        margin: 15px 0 10px;
+    }
+    .profile-card p {
+        color: #666;
+        font-size: 14px;
+    }
+
+    /* ===== Registration Form ===== */
+    .form-container {
+        max-width: 400px;
+        margin: 0 auto 50px auto;
+        background: #fff;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+    .form-container h3 {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .form-container label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .form-container .gender, .form-container .hobbies {
+        margin: 10px 0;
+    }
+    .form-container button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .form-container button:hover {
+        background: #575757;
+    }
+
+    /* ===== Two-Column Layout ===== */
+    .two-column {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        margin: 0 auto 50px auto;
+        max-width: 800px;
+        overflow: hidden;
+    }
+    .two-column .text {
+        flex: 1;
+        padding: 20px;
+        font-size: 16px;
+        color: #444;
+    }
+    .two-column img {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* ===== Styled Buttons ===== */
+    .button-section {
+        text-align: center;
+    }
+    .button-section h3 {
+        margin-bottom: 20px;
+    }
+    .btn {
+        padding: 12px 24px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.3s, background 0.3s;
+    }
+    .btn1 { background: #e74c3c; } /* Red */
+    .btn1:hover { background: #c0392b; transform: scale(1.05); }
+
+    .btn2 { background: #3498db; } /* Blue */
+    .btn2:hover { background: #2980b9; transform: scale(1.1); }
+
+    .btn3 { background: #2ecc71; } /* Green */
+    .btn3:hover { background: #27ae60; transform: scale(1.05) rotate(-2deg); }
+
+    /* Responsive for small screens */
+    @media(max-width: 700px){
+        .two-column {
+            flex-direction: column;
+        }
+    }
